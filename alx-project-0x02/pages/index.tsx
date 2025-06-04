@@ -1,6 +1,9 @@
+import Header from "@/components/layout/Header";
+
 const Home: React.FC = () => {
   return (
     <div className="flex h-screen">
+      <Header/>
       <main className="flex-grow flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-white">
