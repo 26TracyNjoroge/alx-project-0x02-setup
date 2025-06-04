@@ -1,9 +1,26 @@
-export default function Header() {
-    return (
-        <div>
-            <main>
-                <h1>Welcome</h1>
-            </main>
-        </div>
+import Link from "next/link";
+
+const Header: React.FC = () => {
+    return(
+        <header className="bg-green-600">
+            <div className="flex items-center justify-between gap-2 ">
+                <div>
+                    <h3>Welcome</h3>
+                </div>
+                
+                <nav>
+                    <ul className="flex gap-4 items-center p-2 rounded">
+                        <li className="underline">
+                            <Link href="/home">Home</Link>
+                        </li>
+                        <li  className="underline">
+                             <Link href="/about">About</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
     )
 }
+export default Header;
