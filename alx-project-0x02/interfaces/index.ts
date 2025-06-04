@@ -1,6 +1,4 @@
-export interface PostProps {
-    userId: number;
-    id: number;
+export interface CardProps {
     title: string;
-    body: string;
+    content: string;
 }
