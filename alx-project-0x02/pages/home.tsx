@@ -1,5 +1,8 @@
 import Header from "@/components/layout/Header";
 import Card from "@/components/common/Card";
+import PostModal from "@/components/common/PostModal";
+import { useState } from "react";
+import { CardProps } from "@/interfaces";
 
 const Home: React.FC = () => {
     const welcomeTitle = "Welcome to our Application!";

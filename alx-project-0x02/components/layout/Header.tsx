@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
     return(
-        <header className="bg-green-600">
+        <header className="p-3 mb-2 bg-green-600">
             <div className="flex items-center justify-between gap-2 ">
                 <div>
                     <h3>Welcome</h3>
