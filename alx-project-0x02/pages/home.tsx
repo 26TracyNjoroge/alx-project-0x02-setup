@@ -17,17 +17,17 @@ export default function HomePage() {
   };
 
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className="">
       <Header />
-      <Card title="Post Title" content="Post Content" />
+      <div className="p-6 flex justify-center flex-wrap">
+        <Card title="Title 1" content="Post Content" />
+        <Card title="Title 2" content="Post Content 2" />
+      </div>
 
-      <Card title="Post Title 2" content="Post Content 2" />
-
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Home</h1>
+      <div className="p-3 flex justify-center items-center mb-6">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          className="flex justify-center items-center px-3 py-1 bg-green-600 text-white rounded-md hover:bg-green-700"
         >
           New Post
         </button>
@@ -35,13 +35,13 @@ export default function HomePage() {
 
       <PostModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        onClose={() => setIsModalOpen(false)} 
         onSubmit={handleAddPost}
       />
 
       <div className="space-y-4">
         {posts.length === 0 ? (
-          <p className="text-gray-500">No posts yet.</p>
+          <p className="text-gray-500 pl-5">No posts yet.</p>
         ) : (
           posts.map((post, idx) => (
             <div key={idx} className="border rounded-md p-4 shadow-sm bg-white">

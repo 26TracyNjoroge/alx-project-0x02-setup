@@ -7,7 +7,7 @@ const About: React.FC = () => {
             <Header/>
             <main>
                 <h1>About us</h1>
-                <div className="flex flex-wrap gap-4 items-center">
+                <div className="flex justify-center items-center flex-wrap gap-4 items-center">
                     <Button 
                         title="Small Rounded" 
                         size="small" 
