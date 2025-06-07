@@ -6,10 +6,10 @@ import {  ApiProps, PostProps } from '@/interfaces';
 export default function PostsPage({ posts }: { posts: PostProps[] }) {
  
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div>
       <Header />
       <h1 className="text-2xl text-center font-bold mb-6">Posts</h1>
-      <div className="space-y-4">
+      <div className="space-y-4 p-8">
         {posts.map((post) => (
           <PostCard
             key={post.id}

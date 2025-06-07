@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import PostModal from "@/components/common/PostModal";
 import Card from "@/components/common/Card";
 import Header from "@/components/layout/Header";
-
-interface Post {
-  title: string;
-  content: string;
-}
+import { Post } from "@/interfaces";
 
 export default function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);

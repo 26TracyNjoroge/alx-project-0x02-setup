@@ -19,6 +19,9 @@ const Header: React.FC = () => {
                         <li  className="underline">
                              <Link href="/posts">Posts</Link>
                         </li>
+                        <li  className="underline">
+                             <Link href="/users">Users</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
