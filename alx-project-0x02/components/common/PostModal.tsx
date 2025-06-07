@@ -9,7 +9,7 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, isOpen, onSubmit }) => {
         e.preventDefault();
 
         if (title.trim() && content.trim()) {
-            onSubmit(title, content);
+            onSubmit({title, content});
             setTitle("");
             setContent("");
             onClose();
